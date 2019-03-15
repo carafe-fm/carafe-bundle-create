@@ -1,0 +1,15 @@
+{
+  "name": "@soliantconsulting/create-carafe-bundle",
+  "version": "0.1.0",
+  "description": "Create a carafe bundles",
+  "author": "Soliant Consulting",
+  "license": "MIT",
+  "bin": {
+    "create-carafe-bundle": "cli.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "copy-dir": "^0.4.0",
+    "meow": "^5.0.0"
+  }
+}

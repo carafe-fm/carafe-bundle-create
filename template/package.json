@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "@soliantconsulting/carafe-bundle-template",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "render-carafe-source",
+    "build": "create-carafe-bundle"
+  },
+  "devDependencies": {
+    "@soliantconsulting/carafe-bundler": "^0.1.2"
+  },
+  "carafe": {
+    "templateFilename": "src/template.carafe",
+    "configFilename": "src/config.json",
+    "dataFilename": "src/data.json",
+    "metaFilename": "src/meta.json",
+    "previewFilename": "src/preview.jpg"
+  }
+}
