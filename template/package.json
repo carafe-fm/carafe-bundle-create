@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "render-carafe-source",
-    "build": "create-carafe-bundle"
+    "build": "create-carafe-bundle",
+    "extract": "extract-carafe-bundle"
   },
   "devDependencies": {
     "@soliantconsulting/carafe-bundler": "^0.1.2"

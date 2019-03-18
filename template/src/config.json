@@ -1,240 +1,156 @@
 {
-    "backgroundColor": {
-        "category": "General Lee Options",
+    "booleanVar": {
+        "category": "General Inputs",
+        "help": "Optional help text. Values should be string keywords \"true\" or \"false\"",
         "isData": false,
-        "label": "Background Colour",
-        "sort": "",
-        "type": "color",
-        "value": "rgba(102,153,204,1)"
-    },
-    "color": {
-        "category": "Color",
-        "label": "Text Color",
-        "sort": "",
-        "type": "color",
-        "value": "rgba(153,51,51,1)"
-    },
-    "countdown": {
-        "help": "",
-        "isData": false,
-        "label": "Countdown Timer",
-        "possibleValues": [
-            "true",
-            "false"
-        ],
+        "label": "Boolean",
+        "sort": "1",
         "type": "booleanCheck",
-        "unit": "",
-        "value": "true"
+        "value": "false"
     },
-    "doneBackground": {
-        "label": "Finished Background",
+    "colorVar": {
+        "category": "Style",
+        "help": "Optional help text.",
+        "isData": false,
+        "label": "Color",
+        "sort": "1",
         "type": "color",
-        "value": "rgba(51,136,119,1)"
+        "value": "rgba(121,121,121,1)"
     },
-    "doneColor": {
-        "label": "Finished Text",
-        "type": "color",
-        "value": "rgba(255,255,255,1)"
+    "cssSnippetVar": {
+        "category": "Snippets",
+        "help": "Optional help text.",
+        "isData": false,
+        "label": "CSS",
+        "sort": "2",
+        "type": "CSS Snippet",
+        "value": ".selector:  { height: 100%; }"
     },
-    "filename": {
-        "calculated": true,
+    "dropdownVar": {
+        "category": "General Inputs",
+        "help": "Optional help text. Enumerated list which expects other values.",
+        "isData": false,
+        "label": "Dropdown",
+        "possibleValues": [
+            "Baz",
+            "Bat"
+        ],
+        "sort": "4",
+        "type": "dropdown",
+        "value": "Baz"
+    },
+    "fmpFileNameVar": {
         "calculation": "Get(FileName)",
+        "category": "FileMaker",
+        "help": "Optional help text.",
+        "isData": false,
+        "label": "FMP File Name",
+        "sort": "1",
+        "type": "fmpFileName",
+        "value": "Carafe"
+    },
+    "fmpScriptNameVar": {
+        "category": "FileMaker",
+        "help": "Optional help text.",
+        "isData": false,
+        "label": "FMP Script Name",
+        "lengthSafeParam": true,
+        "parameterData": {
+            "theKey": "This is the explainer of theKey"
+        },
+        "sort": "2",
+        "type": "fmpScriptName",
+        "value": "My Script"
+    },
+    "htmlSnippetVar": {
+        "category": "Snippets",
+        "help": "Optional help text.",
+        "isData": false,
+        "label": "HTML Snippet",
+        "sort": "1",
+        "type": "HTML Snippet",
+        "value": "<h1>Some HTML</h1>"
+    },
+    "jsSnippetVar": {
+        "category": "Snippets",
+        "help": "Optional help text.",
+        "isData": false,
+        "label": "JS Snippet",
+        "sort": "3",
+        "type": "JS Snippet",
+        "value": "alert('jsSnippetVar ran.');"
+    },
+    "jsonArrayVar": {
+        "category": "JSON",
+        "help": "Optional help text.",
         "isData": true,
-        "label": "File Name",
-        "possibleValues": [
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false"
-        ],
-        "sort": 1,
-        "type": "fmpFileName"
+        "label": "JSON Array",
+        "sort": "1",
+        "type": "json array"
     },
-    "fontFamily": {
-        "category": "General Options",
-        "isData": false,
-        "label": "Font",
-        "possibleValues": [
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false"
-        ],
-        "sort": "",
-        "type": "text",
-        "value": "Arial"
+    "jsonObjectVar": {
+        "category": "JSON",
+        "help": "Optional help text.",
+        "isData": true,
+        "label": "JSON Object",
+        "sort": "2",
+        "type": "json object"
     },
-    "fontSize": {
-        "help": "",
+    "numberVar": {
+        "category": "General Inputs",
+        "help": "Optional help text.",
         "isData": false,
-        "label": "Font Size",
-        "possibleValues": [
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false"
-        ],
+        "label": "Number",
+        "sort": "2",
         "type": "number",
-        "unit": "",
-        "value": 50
+        "value": 3.14
     },
-    "initialValue": {
-        "help": "",
-        "isData": true,
-        "label": "Initial Value",
-        "possibleValues": [
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false"
-        ],
-        "sort": 3,
-        "type": "text",
-        "unit": "",
-        "value": "00:00:00"
-    },
-    "pTop": {
+    "paddingVar": {
+        "category": "Style",
+        "help": "Optional help text.",
         "isData": false,
-        "label": "Padding Top",
+        "label": "Padding",
+        "sort": "2",
         "type": "padding",
-        "value": "0px 0px 0px 0px"
+        "value": "1px 2px 3px 4px"
     },
-    "scriptname": {
-        "isData": true,
-        "label": "Script Name",
-        "possibleValues": [
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false"
-        ],
-        "sort": 2,
-        "type": "fmpScriptName"
-    },
-    "start": {
-        "isData": true,
-        "label": "Start",
-        "sort": 4,
-        "type": "number",
-        "value": "15"
-    },
-    "target": {
-        "help": "",
-        "isData": true,
-        "label": "Target",
-        "possibleValues": [
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false",
-            "true",
-            "false"
-        ],
-        "sort": 5,
-        "type": "number",
-        "unit": "",
-        "value": "10"
-    },
-    "textAlign": {
+    "popupVar": {
+        "category": "General Inputs",
+        "help": "Optional help text. Enumerated list which expects only enumerated values.",
         "isData": false,
-        "label": "Text Alignment",
+        "label": "Popup",
+        "possibleValues": [
+            "Foo",
+            "Bar"
+        ],
+        "sort": "5",
+        "type": "popup",
+        "value": "Foo"
+    },
+    "textAlignVar": {
+        "category": "Style",
+        "help": "Optional help text.",
+        "isData": false,
+        "label": "Text Align",
+        "sort": "3",
         "type": "textAlign",
-        "value": "center"
+        "value": "left"
     },
-    "verticalAlign": {
+    "textVar": {
+        "category": "General Inputs",
+        "help": "Optional help text.",
+        "isData": true,
+        "label": "Text",
+        "sort": "3",
+        "type": "text"
+    },
+    "verticalAlignVar": {
+        "category": "Style",
+        "help": "Optional help text.",
         "isData": false,
-        "label": "Vertical Alignment",
+        "label": "Vertical Align",
+        "sort": "4",
         "type": "verticalAlign",
-        "value": "middle"
+        "value": "top"
     }
 }
