@@ -1,3 +1,6 @@
 /node_modules
 /package-lock.json
+/template/dist
+/template/node_modules
+/template/package-lock.json
 /.idea

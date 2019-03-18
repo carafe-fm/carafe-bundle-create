@@ -53,6 +53,7 @@ if (fs.existsSync(root)) {
 
 fs.mkdirSync(root, {recursive: true});
 copyDir.sync(__dirname + '/template', root);
+fs.renameSync(root + '/dist.gitignore', root + '/.gitignore');
 
 log('Installing packages…');
 exec('npm install', {

@@ -4,11 +4,11 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "render-carafe-source",
-    "build": "create-carafe-bundle",
+    "build": "create-carafe-bundle dist/Carafe-Bundle-{name}-{version}.json",
     "extract": "extract-carafe-bundle"
   },
   "devDependencies": {
-    "@soliantconsulting/carafe-bundler": "^0.1.2"
+    "@soliantconsulting/carafe-bundler": "^0.2.0"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",
