@@ -1,4 +1,5 @@
 {
+    "$schema" : "https://carafe.fm/schema/draft-01/data.schema.json#",
     "about": "<span style=\"\" >This Bundle is designed to illustrate the features of the format when bootstrapping with the Carafe Bundler</span>",
     "bookend": "__",
     "bridgeAPIMethods": {
@@ -12,15 +13,15 @@
         }
     },
     "category": "Utility",
-    "creator": "Jeremiah Small",
+    "creator": "Soliant Consulting",
     "description": "A starter Carafe Bundle.",
-    "hashLoad": true,
-    "id": "2A7ECE9F-36CD-4DF1-8C21-B211838DBAAB",
+    "hashLoad": false,
+    "id": "",
     "name": "Carafe Starter",
-    "offlineCompatibile": true,
+    "offlineCompatibile": false,
     "references": [
-        "https://github.com/soliantconsulting/carafe"
+        "https://carafe.fm"
     ],
     "version": "2.0.0",
-    "windowsTested": true
+    "windowsTested": false
 }
