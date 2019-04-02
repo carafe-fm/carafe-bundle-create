@@ -1,5 +1,5 @@
 {
-    "$schema" : "https://carafe.fm/schema/draft-01/data.schema.json#",
+    "$schema" : "https://carafe.fm/schema/draft-01/meta.schema.json#",
     "about": "<span style=\"\" >This Bundle is designed to illustrate the features of the format when bootstrapping with the Carafe Bundler</span>",
     "bookend": "__",
     "bridgeAPIMethods": {

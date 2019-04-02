@@ -8,7 +8,7 @@
     "extract": "extract-carafe-bundle"
   },
   "devDependencies": {
-    "@soliantconsulting/carafe-bundler": "^0.6.0"
+    "@soliantconsulting/carafe-bundler": "^0.6.1"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",
