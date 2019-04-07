@@ -3,9 +3,10 @@
   "name": "@soliantconsulting/carafe-bundle-template",
   "version": "0.1.0",
   "scripts": {
-    "validate": "validate-carafe-bundle",
-    "import": "extract-carafe-bundle",
+    "validate": "validate-carafe-bundle -b ",
+    "import": "extract-carafe-bundle -b ",
     "watch": "render-carafe-source",
+    "watch-port": "render-carafe-source -p ",
     "build": "compile-carafe-bundle",
     "push": "compile-carafe-bundle -f"
   },

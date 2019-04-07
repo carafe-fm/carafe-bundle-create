@@ -20,7 +20,13 @@ npm run import <path/to/bundle.json>
 During development you can use the built-in live server to test changes:
 
 ```bash
+# Watch on the default port 8080
 npm run watch
+```
+
+```bash
+# Watch on a custom port
+npm run watch-port <port>
 ```
 
 ## Build
