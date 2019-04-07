@@ -3,12 +3,14 @@
   "name": "@soliantconsulting/carafe-bundle-template",
   "version": "0.1.0",
   "scripts": {
-    "dev": "render-carafe-source",
-    "build": "create-carafe-bundle dist/Carafe-Bundle-{name}-{version}.json",
-    "extract": "extract-carafe-bundle"
+    "validate": "validate-carafe-bundle",
+    "import": "extract-carafe-bundle",
+    "watch": "render-carafe-source",
+    "build": "compile-carafe-bundle",
+    "push": "compile-carafe-bundle -f"
   },
   "devDependencies": {
-    "@soliantconsulting/carafe-bundler": "^0.6.1"
+    "@soliantconsulting/carafe-bundler": "^0.7.0"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",
