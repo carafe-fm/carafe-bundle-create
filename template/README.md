@@ -1,6 +1,20 @@
 # Carafe Bundle Development
 
-You can start by editing the default src files, or if you want to initialize the project with an existing bundle, you can extract the src files from a bundle
+You can directly edit the src files, or you can import an an existing bundle.
+
+## Prerequisites
+
+You will need to have [Node.js and NPM installed](https://nodejs.org/en/download/) to use this utility.
+
+## Install
+
+If you just initialized this project, it has already been installed, but if you just cloned it from a repository, you need to install.
+
+```bash
+npm install
+```
+
+Once your project is installed, you can use the following commands.
 
 ## Validate
 ```bash

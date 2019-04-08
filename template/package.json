@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "@soliantconsulting/carafe-bundle-template",
-  "version": "0.1.0",
+  "name": "carafe-bundle-template",
+  "version": "0.0.0",
   "scripts": {
     "validate": "validate-carafe-bundle -b ",
     "import": "extract-carafe-bundle -b ",
@@ -11,7 +11,7 @@
     "push": "compile-carafe-bundle -f"
   },
   "devDependencies": {
-    "@soliantconsulting/carafe-bundler": "^0.7.0"
+    "@soliantconsulting/carafe-bundler": "^0.7.1"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",
