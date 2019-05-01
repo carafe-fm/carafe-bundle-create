@@ -11,7 +11,7 @@
     "push": "compile-carafe-bundle -f"
   },
   "devDependencies": {
-    "@soliantconsulting/carafe-bundler": "^0.7.1"
+    "@carafe-fm/bundler": "^1.0.0"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",

@@ -21,7 +21,7 @@ const cli = meow(
     `
   Usage
 
-    $ npm init @soliant-consulting/carafe-bundle my-carafe-bundle
+    $ npm init @carafe-fm/bundle my-new-bundle
 `,
     {
         booleanDefault: undefined,
