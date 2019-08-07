@@ -8,16 +8,19 @@
     "watch": "render-carafe-source",
     "watch-port": "render-carafe-source -p ",
     "build": "compile-carafe-bundle",
-    "push": "compile-carafe-bundle -f"
+    "push": "compile-carafe-bundle -p",
+    "force-push": "compile-carafe-bundle -p -f"
   },
   "devDependencies": {
-    "@carafe-fm/bundler": "^1.0.0"
+    "@carafe-fm/bundler": "^1.1.0"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",
     "configFilename": "src/config.json",
     "dataFilename": "src/data.json",
     "metaFilename": "src/meta.json",
-    "previewFilename": "src/preview.jpg"
+    "previewFilename": "src/preview.jpg",
+    "pushFmpUrl": "",
+    "watchedFiles": []
   }
 }
