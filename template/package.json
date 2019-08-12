@@ -1,18 +1,20 @@
 {
   "private": true,
-  "name": "carafe-bundle-template",
-  "version": "0.0.0",
   "scripts": {
     "validate": "validate-carafe-bundle -b ",
     "import": "extract-carafe-bundle -b ",
+    "build": "compile-carafe-bundle",
+    "send": "compile-carafe-bundle -s",
+    "force-send": "compile-carafe-bundle -s -f",
     "watch": "render-carafe-source",
     "watch-port": "render-carafe-source -p ",
-    "build": "compile-carafe-bundle",
-    "push": "compile-carafe-bundle -p",
-    "force-push": "compile-carafe-bundle -p -f"
+    "watch-send": "render-carafe-source -s",
+    "watch-send-port": "render-carafe-source -s -p ",
+    "force-watch-send": "render-carafe-source -s -f",
+    "force-watch-send-port": "render-carafe-source -s -f -p "
   },
   "devDependencies": {
-    "@carafe-fm/bundler": "^1.1.1"
+    "@carafe-fm/bundler": "^2.0.0"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",
@@ -20,7 +22,7 @@
     "dataFilename": "src/data.json",
     "metaFilename": "src/meta.json",
     "previewFilename": "src/preview.jpg",
-    "pushFmpUrl": "",
+    "sendFmpUrl": "",
     "watchedFiles": []
   }
 }

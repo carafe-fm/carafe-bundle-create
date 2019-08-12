@@ -1,6 +1,6 @@
 # Carafe Bundle Development
 
-You can directly edit the src files, or you can import an an existing bundle.
+You can directly edit the src files, or you can import an an existing Bundle.
 
 ## Prerequisites
 
@@ -30,32 +30,88 @@ npm run import <path/to/bundle.json>
 
 **CAUTION:** The import command overwrites all src files without warning.
 
-## Watch
-During development you can use the built-in live server to test changes:
+## Build
+When you are ready to publish your Bundle, you can call either of the following commands, both which will generate a JSON Bundle file in the project dist directory:
 
 ```bash
-# Watch on the default port 8080
+npm run build
+```
+
+## Send
+By default, Send will prompt you in FileMaker if the Bundle already exists to let you choose to version it or rename it or overwrite it. During development of a new Bundle, a common use case is to automatically overwrite without a prompt. This is what Force Send is designed for. Use this option with caution.
+
+```bash
+# Build Bundle file and Send it to FileMaker
+npm run send
+
+# Use with care: Sends to Carafe in FileMaker without overwrite warnings
+npm run force-send
+```
+
+## Watch
+During development you can use the built-in live server to test changes as you go:
+
+```bash
+# Watch on the default Port 8080
 npm run watch
 ```
 
 ```bash
-# Watch on a custom port
+# Watch on a custom Port
 npm run watch-port <port>
 ```
 
-## Build
-When you are ready to publish your bundle, you can call either of the following commands, both which will generate a JSON Bundle in the project dist directory:
+## Watch and Send
+The development server can also be told to Send each build to FileMaker automatically
 
 ```bash
-# Build Bundle file
-npm run build
+# Watch on the default Port 8080 and Send
+npm run watch-send
 ```
 
-## Push
 ```bash
-# Build Bundle file and push it to Carafe in FileMaker
-npm run push
-
-# Use with care: you may also push to Carafe in FileMaker without overwrite warnings
-npm run force-push
+# Watch on a custom Port and Send
+npm run watch-send-port <port>
 ```
+
+
+## Force Watch and Send
+By default, Send will prompt you in FileMaker if the Bundle already exists to let you choose to version it or rename it or overwrite it. During development of a new Bundle, a common use case is to automatically overwrite without a prompt. This is what Force Watch and Send is designed for. Use this option with caution.
+
+```bash
+# Watch on the default Port 8080 and Send
+npm run force-watch-send
+```
+
+```bash
+# Watch on a custom Port and Send
+npm run force-watch-send-port <port>
+```
+
+## Advanced Settings
+Your `package.json` file contains a `carafe` object with the following defaults.
+
+```
+  "carafe": {
+    "templateFilename": "src/template.carafe",
+    "configFilename": "src/config.json",
+    "dataFilename": "src/data.json",
+    "metaFilename": "src/meta.json",
+    "previewFilename": "src/preview.jpg",
+    "sendFmpUrl": "",
+    "watchedFiles": []
+  }
+```
+
+### Source File Paths
+The first five options are the paths for the five component files that make up a Bundle. You may alter these to match a custom work flow. Normally it's a good idea to stick with the defaults.
+
+### Optional sendFmpUrl Override
+By default, the Bundler will use the following pattern when you add the Send switch to your command
+
+```fmp://$/Carafe?script=Send%20Carafe%20Bundle&param={sendConfig}```
+
+If you provide your own pattern, you can still include the `{sendConfig}` placeholder, and it will be expanded into a JSON object with `'path'` string and `'forceSend'` bool properties at runtime so that your FileMaker script can access the compiled Bundle and know if you have passed the force switch or not.
+
+### Optional watchedFiles array
+You can provide an array of files which the Carafe Bundler will include inline in your Bundle `html` and which will signal the Carafe dev server that it needs to refresh. This is useful if you are working with your own compiler/transpiler such as webpack and you want to trigger a reload when your external build process outputs updates.
