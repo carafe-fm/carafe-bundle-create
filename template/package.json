@@ -7,12 +7,16 @@
     "import": "extract-carafe-bundle -b ",
     "watch": "render-carafe-source",
     "watch-port": "render-carafe-source -p ",
+    "watch-send": "render-carafe-source -s",
+    "watch-force-send": "render-carafe-source -s -f",
+    "watch-send-port": "render-carafe-source -s -p ",
+    "watch-force-send-port": "render-carafe-source -s -f -p ",
     "build": "compile-carafe-bundle",
-    "push": "compile-carafe-bundle -p",
-    "force-push": "compile-carafe-bundle -p -f"
+    "send": "compile-carafe-bundle -s",
+    "force-send": "compile-carafe-bundle -s -f"
   },
   "devDependencies": {
-    "@carafe-fm/bundler": "^1.1.1"
+    "@carafe-fm/bundler": "^2.0.0"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",
@@ -20,7 +24,7 @@
     "dataFilename": "src/data.json",
     "metaFilename": "src/meta.json",
     "previewFilename": "src/preview.jpg",
-    "pushFmpUrl": "",
+    "sendFmpUrl": "",
     "watchedFiles": []
   }
 }

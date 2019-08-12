@@ -51,11 +51,11 @@ When you are ready to publish your bundle, you can call either of the following 
 npm run build
 ```
 
-## Push
+## Send
 ```bash
-# Build Bundle file and push it to Carafe in FileMaker
-npm run push
+# Build Bundle file and send it to Carafe in FileMaker
+npm run send
 
-# Use with care: you may also push to Carafe in FileMaker without overwrite warnings
-npm run force-push
+# Use with care: you may also send to Carafe in FileMaker without overwrite warnings
+npm run force-send
 ```
