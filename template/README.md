@@ -55,4 +55,7 @@ npm run build
 ```bash
 # Build Bundle file and push it to Carafe in FileMaker
 npm run push
+
+# Use with care: you may also push to Carafe in FileMaker without overwrite warnings
+npm run force-push
 ```

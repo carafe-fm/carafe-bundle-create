@@ -12,7 +12,7 @@
     "force-push": "compile-carafe-bundle -p -f"
   },
   "devDependencies": {
-    "@carafe-fm/bundler": "^1.1.0"
+    "@carafe-fm/bundler": "^1.1.1"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",
