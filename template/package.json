@@ -23,6 +23,6 @@
     "metaFilename": "src/meta.json",
     "previewFilename": "src/preview.jpg",
     "sendFmpUrl": "",
-    "watchedFiles": []
+    "watchedFiles": {}
   }
 }

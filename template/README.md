@@ -8,7 +8,7 @@ You will need to have [Node.js and NPM installed](https://nodejs.org/en/download
 
 ## Install
 
-If you just initialized this project, it has already been installed, but if you just cloned it from a repository, you need to install.
+You need to install the project before the rest of the npm scripts will work.
 
 ```bash
 npm install
@@ -99,7 +99,7 @@ Your `package.json` file contains a `carafe` object with the following defaults.
     "metaFilename": "src/meta.json",
     "previewFilename": "src/preview.jpg",
     "sendFmpUrl": "",
-    "watchedFiles": []
+    "watchedFiles": {}
   }
 ```
 
@@ -113,5 +113,33 @@ By default, the Bundler will use the following pattern when you add the Send swi
 
 If you provide your own pattern, you can still include the `{sendConfig}` placeholder, and it will be expanded into a JSON object with `'path'` string and `'forceSend'` bool properties at runtime so that your FileMaker script can access the compiled Bundle and know if you have passed the force switch or not.
 
-### Optional watchedFiles array
-You can provide an array of files which the Carafe Bundler will include inline in your Bundle `html` and which will signal the Carafe dev server that it needs to refresh. This is useful if you are working with your own compiler/transpiler such as webpack and you want to trigger a reload when your external build process outputs updates.
+### Optional watchedFiles object
+You can provide one or more files which the Carafe Bundler will merge into in your Bundle `html`. Changes to any watched file will signal the Carafe dev server to refresh. The contents of each watched file will be merged into the html template using the configured bookend delimiters. This is useful if you are working with your own custom package using a compiler/transpiler such as webpack and you want to inject it into your html template when your external build process runs.
+
+#### Example
+
+Add a file to your project called `example/file.txt` with the following content:
+
+```
+foo
+```
+
+Add the following property to `"carafe"` in your package.json
+
+```
+"watchedFiles": {
+  "mergeFieldName": "example/file.txt"
+}
+```
+
+Assuming you are configured with `__` as bookend, add the following snippet to your project `src/template.json`:
+
+```
+<p>__mergeFieldName__</p>
+```
+
+When you save any changed `src` file or cause any change to configured `watchedFiles`, the contents of the watched file(s) will be automatically merged into the html of the Bundle whenever it compiles.
+
+```
+<p>foo</p>
+```
