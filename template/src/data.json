@@ -1,11 +1,4 @@
 {
-    "$schema" : "https://carafe.fm/schema/draft-01/data.schema.json#",
-    "jsonArrayVar": [
-        "This",
-        "That"
-    ],
-    "jsonObjectVar": {
-        "name": "value"
-    },
-    "textVar": "Foo"
+    "$schema": "https://carafe.fm/schema/draft-02/data.schema.json#",
+    "bar": "JavaScript made me bold!"
 }

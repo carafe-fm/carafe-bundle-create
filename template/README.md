@@ -98,13 +98,14 @@ Your `package.json` file contains a `carafe` object with the following defaults.
     "dataFilename": "src/data.json",
     "metaFilename": "src/meta.json",
     "previewFilename": "src/preview.jpg",
+    "librariesDirname": "src/libraries",
     "sendFmpUrl": "",
     "watchedFiles": {}
   }
 ```
 
-### Source File Paths
-The first five options are the paths for the five component files that make up a Bundle. You may alter these to match a custom work flow. Normally it's a good idea to stick with the defaults.
+### Source Paths
+The first six options are the paths for the five component files that make up a Bundle and the directory for optional libraries files. You may alter these to match a custom work flow. Normally it's a good idea to stick with the defaults.
 
 ### Optional sendFmpUrl Override
 By default, the Bundler will use the following pattern when you add the Send switch to your command

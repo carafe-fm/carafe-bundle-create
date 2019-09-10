@@ -1,7 +1,7 @@
 {
-  "name": "@carafe-fm/create-bundle",
-  "version": "2.0.1",
-  "description": "Create a carafe bundle",
+  "name": "@carafe-fm/create-bundle-dev",
+  "version": "3.0.0-alpha.1",
+  "description": "Create a Carafe bundle from the edge development branch",
   "author": "Soliant Consulting",
   "license": "MIT",
   "bin": {
@@ -10,12 +10,16 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "copy-dir": "^0.4.0",
-    "meow": "^5.0.0"
+    "meow": "^5.0.0",
+    "prompts": "^2.2.1",
+    "semver": "^6.3.0",
+    "slugify": "^1.3.5",
+    "uuid": "^3.3.3"
   },
   "main": "cli.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/carafe-fm/carafe-bundle-create.git"
+    "url": "git+ssh://git@github.com:jeremiahsmall/carafe-bundle-create.git"
   },
   "keywords": [
     "FileMaker",
