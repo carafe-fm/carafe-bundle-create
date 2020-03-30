@@ -14,7 +14,7 @@
     "force-watch-send-port": "render-carafe-source -s -f -p "
   },
   "devDependencies": {
-    "@carafe-fm/bundler": "jeremiahsmall/carafe-bundler#feature/draft-02-schema"
+    "@carafe-fm/bundler": "^3.0.0"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",
