@@ -99,7 +99,7 @@ Your `package.json` file contains a `carafe` object with the following defaults.
     "metaFilename": "src/meta.json",
     "previewFilename": "src/preview.jpg",
     "librariesDirname": "src/libraries",
-    "sendFmpUrl": "",
+    "sendFmpUrl": "fmp://$/Carafe%20Kitchen?script=Send%20Carafe%20Bundle&param={sendConfig}",
     "watchedFiles": {}
   }
 ```
@@ -110,7 +110,7 @@ The first six options are the paths for the five component files that make up a 
 ### Optional sendFmpUrl Override
 By default, the Bundler will use the following pattern when you add the Send switch to your command
 
-```fmp://$/Carafe?script=Send%20Carafe%20Bundle&param={sendConfig}```
+```fmp://$/Carafe%20Kitchen?script=Send%20Carafe%20Bundle&param={sendConfig}```
 
 If you provide your own pattern, you can still include the `{sendConfig}` placeholder, and it will be expanded into a JSON object with `'path'` string and `'forceSend'` bool properties at runtime so that your FileMaker script can access the compiled Bundle and know if you have passed the force switch or not.
 

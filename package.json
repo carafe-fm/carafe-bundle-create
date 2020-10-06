@@ -1,7 +1,7 @@
 {
   "name": "@carafe-fm/create-bundle",
-  "version": "3.0.0",
-  "description": "Create a Carafe bundle from the edge development branch",
+  "version": "3.1.0",
+  "description": "Create a Carafe bundle",
   "author": "Soliant Consulting",
   "license": "MIT",
   "bin": {

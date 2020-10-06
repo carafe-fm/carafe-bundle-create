@@ -14,7 +14,7 @@
     "force-watch-send-port": "render-carafe-source -s -f -p "
   },
   "devDependencies": {
-    "@carafe-fm/bundler": "^3.0.0"
+    "@carafe-fm/bundler": "^3.1.0"
   },
   "carafe": {
     "templateFilename": "src/template.carafe",
@@ -23,7 +23,7 @@
     "metaFilename": "src/meta.json",
     "previewFilename": "src/preview.jpg",
     "librariesDirname": "src/libraries",
-    "sendFmpUrl": "",
+    "sendFmpUrl": "fmp://$/Carafe%20Kitchen?script=Send%20Carafe%20Bundle&param={sendConfig}",
     "watchedFiles": {}
   }
 }
